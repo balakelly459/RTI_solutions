@@ -50,3 +50,11 @@ button{
 button:hover{
     box-shadow: 0px 0px 20px black;
 }
+
+.classeRed .consumos{
+    color: #da3a34;
+}
+.classeGreen .consumos{
+    color: rgb(97, 161, 0);
+
+}
