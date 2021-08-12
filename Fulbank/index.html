@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form  method="POST" action="salario.php">
+
+        <h1>Fulbank</h1>
+
+        <label for="Nome">Nome</label>
+        <input id="nome" name="nome" required />
+
+        <label for="salario">Salário R$</label>
+        <input id="salario" name="salario" required/>
+
+        <label for="genero">Genero:</label>
+        <!-- <input id="genero" name="genero" required/> -->
+        <input type="radio" name="genero" value="M"/> Masculino<br />
+        <input type="radio" name="genero" value="F"/>  Feminino<br />
+        <input type="radio" name="genero" value="O"/>  Outro<br />
+
+
+        <label for="cargo">Cargo</label>
+       <select name="cargo" id="cargo">
+           <option value="">Administrador(a)</option>
+           <option value="">Analista de Suporte Técnico</option>
+           <option value="">Bancário(a)</option>
+           <option value="">Secrétario(a)</option>
+
+       </select>
+
+        <button>Gerar</button>
+    </form>
+    
+</body>
+</html>
