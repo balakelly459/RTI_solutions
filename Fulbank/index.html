@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fulbank</title>
+    <title>Fulbank - Calcular salário</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,29 +12,48 @@
 
         <h1>Fulbank</h1>
 
-        <label for="Nome">Nome</label>
+        <label for="nome">Nome:</label>
         <input id="nome" name="nome" required />
 
-        <label for="salario">Salário R$</label>
+        <label for="salario">Salário (Em R$):</label>
         <input id="salario" name="salario" required/>
 
+        <div class="input-radio">
+        <label for="genero">Gênero:</label>
+
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="masculino" name="genero" required/>
+        </div>
+
+        <div class="input-radio">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="genero" required/>
+            </div>
+
+            <div class="input-radio">
+                <label for="outros">Outros</label>
+                <input type="radio" id="outros" name="genero" required/>
+                </div>
+
+<!-- 
         <label for="genero">Genero:</label>
-        <!-- <input id="genero" name="genero" required/> -->
         <input type="radio" name="genero" value="M"/> Masculino<br />
         <input type="radio" name="genero" value="F"/>  Feminino<br />
-        <input type="radio" name="genero" value="O"/>  Outro<br />
+        <input type="radio" name="genero" value="O"/>  Outro<br />  -->
 
 
-        <label for="cargo">Cargo</label>
-       <select name="cargo" id="cargo">
-           <option value="">Administrador(a)</option>
-           <option value="">Analista de Suporte Técnico</option>
-           <option value="">Bancário(a)</option>
-           <option value="">Secrétario(a)</option>
+        <label for="cargos">Cargo:</label>
+       <select name="cargos" id="cargos">
+           <options>Administrador(a)</option>
+           <option>Analista de Suporte Técnico</option>
+           <option>Bancário(a)</option>
+           <option>Secrétario(a)</option>
+           <option>Gerente</option>
+           <option>Engenheiro de Software</option>
 
        </select>
 
-        <button>Gerar</button>
+        <button>Calcular</button>
     </form>
     
 </body>
